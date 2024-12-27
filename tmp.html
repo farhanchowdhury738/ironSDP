@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Box</title>
+  <style>
+    .login-box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 400px;
+      padding: 40px;
+      transform: translate(-50%, -50%);
+      background: black;
+      box-sizing: border-box;
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+      border-radius: 10px;
+    }
+
+    .login-box h2 {
+      margin: 0 0 30px;
+      padding: 0;
+      color: #941d1d;
+      text-align: center;
+    }
+
+    .login-box .user-box {
+      position: relative;
+    }
+
+    .login-box .user-box input {
+      width: 100%;
+      padding: 10px 0;
+      font-size: 16px;
+      margin-bottom: 30px;
+      border: none;
+      border-bottom: 1px solid white;
+      
+      outline: none;
+      background: transparent;
+    }
+
+    .user-box {
+      color: rgb(16, 155, 16);
+    }
+
+    /* Change placeholder text color */
+    .login-box .user-box input::placeholder {
+      color: white;
+      opacity: 0.5; /* Ensures visibility */
+    }
+  </style>
+</head>
+<body>
+  <!-- Contact Section -->
+<section id="contact" class="bg-dark text-white" style="display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px;">
+  <div class="container text-center" style="max-width: 500px;">
+    <h1 style="margin-bottom: 50px;">Contact With Meee</h1>
+    <div class="login-box">
+      <form>
+        <!-- Name Input -->
+        <div class="user-box text-white" style="margin-bottom: 20px;">
+          <input type="text" name="" placeholder="Enter your name" required="" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #333; color: white;">
+        </div>
+        <!-- Email Input -->
+        <div class="user-box" style="margin-bottom: 20px;">
+          <input type="email" name="" placeholder="Enter your email" required="" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #333; color: white;">
+        </div>
+        <!-- Message Input -->
+        <div class="user-box" style="margin-bottom: 20px;">
+          <input id="messageInput" type="text" name="" placeholder="Type your message here" required="" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #333; color: white;">
+        </div>
+        <!-- Submit Button -->
+        <div class="b mt-3">
+          <button type="submit" class="btn btn-primary" id="sendb" style="padding: 10px 20px; font-size: 16px;">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+  <a href="/images/gias.jpg" download=""><h1>Download</h1></a>
+</body>
+</html>
