@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meals App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search for meals">
+                <button id="search-button">Search</button>
+            </div>
+        </header>
+    </div>
+
+    <div class="columns">
+        <!-- Meals List Column -->
+        <div class="meal-list" id="meal-list"></div>
+
+        <!-- Selected Meals Column -->
+        <!-- <div class="selected-group">
+            <h3>Selected Meals</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Image</th>
+                        <th>Name</th>
+                    </tr>
+                </thead>
+                <tbody id="group-list"></tbody>
+            </table>
+            <p id="group-count">Total: 0</p>
+        </div> -->
+    </div>
+
+    <!-- Modal for Details -->
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span id="close-modal"><b>Back</b></span>
+            <hr>
+            <img id="modal-image" src="#" alt="Meal Image">
+            <h2 id="modal-title"></h2>
+            <p><strong>Category:</strong> <span id="modal-category"></span></p>
+            <p><strong>Cuisine:</strong> <span id="modal-cuisine"></span></p>
+            <p><strong>Instructions:</strong> <span id="modal-instructions"></span></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
