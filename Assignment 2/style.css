@@ -1,0 +1,209 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #218838;
+}
+
+/* Columns Layout */
+.columns {
+    display: flex;
+    padding: 20px;
+    margin: 25px;
+}
+
+.drink-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-end;
+    margin-bottom: 20px;
+
+}
+
+.selected-group {
+    width: 400px;
+    height: 800px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+.selected-group h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.selected-group ul {
+    list-style-type: none;
+    padding: 5px;
+    margin: 5px;
+}
+
+.selected-group li {
+    padding: 5px ;
+}
+.select-title{
+    display: flex;
+    justify-content: space-around;
+}
+
+#group-list {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#group-list img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.drink-card {
+    display: flex;
+    text-align: center;
+    width: 300px;
+    border: 1px solid gray;
+    box-shadow: 8px 8px 8px gray;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 20px;
+    padding: 25x;
+    display: flex;
+    flex-direction: column;
+}
+
+.drink-card img {
+    width:auto;
+    border-radius: 10px;
+}
+
+.drink-card h3 {
+    margin-top: 20px;
+}
+
+.drink-card p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.drink-card button {
+    margin: 10px;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.drink-card .add-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.drink-card .add-button:hover {
+    background-color: #0056b3;
+}
+
+.drink-card .details-button {
+    background-color: #6c757d;
+    color: white;
+}
+
+.drink-card .details-button:hover {
+    background-color: #5a6268;
+}
+
+/* Modal Styles */
+.modal {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px gray;
+    width: 300px;
+    padding: 20px;
+    z-index: 1000;
+    display: none;
+}
+
+.modal.visible {
+    display: block;
+}
+
+.modal-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.modal p {
+    margin: 10px 0;
+}
+
+.modal button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal button:hover {
+    background-color: #0056b3;
+}
+#close-modal{
+    cursor: pointer ;
+}
+#modal-image{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+#group-list{
+    text-align: center;
+}
